@@ -22,6 +22,26 @@ body {
   align-items: center;
 }
 
-.filterSelect {
-  width: 300px
+.title {
+  margin-top: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.filter-select {
+  min-width: 170px;
+  margin: 12px 24px;
+}
+
+.content {
+  margin: 0 24px 32px;
+}
+
+.people-table {
+  width: 100%;
 }

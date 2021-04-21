@@ -10,7 +10,8 @@
     ]
   },
   "scripts": {
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "api": "node index"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "handlebars": "^4.0.10",
     "lodash": "^4.17.21",
     "nedb": "^1.8.0",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
