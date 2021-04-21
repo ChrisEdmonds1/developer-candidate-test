@@ -20,5 +20,5 @@ export default ({ data }) => {
     },
   ]
 
-  return (<Table className="people-table" columns={columns} dataSource={data} pagination={false} />)
+  return (<Table className="people-table" rowKey="_id" columns={columns} dataSource={data} pagination={false} />)
 }
