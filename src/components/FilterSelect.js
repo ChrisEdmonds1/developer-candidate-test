@@ -3,7 +3,7 @@ import { Select } from 'antd';
 
 const { Option } = Select;
 
-export default ( {options, onChange }) => {
+export default ( {placeholder, options, onChange }) => {
 
   const handleChange = (value) => {
     onChange(value)
@@ -11,11 +11,12 @@ export default ( {options, onChange }) => {
 
   return (
     <>
-      <Select defaultValue="any" style={{ width: 120 }} onChange={handleChange}>
+      <Select placeholder={placeholder} className="filterSelect" onChange={handleChange}>
         { options
           ? options.map((option, i) => {
+            const { label, value } = option
             return (
-              <Option key={`${i}-${option}`} value={option.toLowerCase()}>{option}</Option>
+              <Option key={`${i}-${label}`} value={value}>{label}</Option>
             )
           })
           : <Option value="disabled" disabled>

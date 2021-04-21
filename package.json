@@ -20,8 +20,11 @@
   "license": "ISC",
   "dependencies": {
     "antd": "^4.15.2",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
     "express": "^4.15.3",
     "handlebars": "^4.0.10",
+    "lodash": "^4.17.21",
     "nedb": "^1.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
